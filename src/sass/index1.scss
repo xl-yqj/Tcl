@@ -1,0 +1,15 @@
+@charset "utf-8";
+@import "compass/reset";
+
+$width:100%;
+$midle-width:1182px;
+$bg-color:#f2f2f2;
+
+@import 'top';
+
+@import 'header';
+
+@import 'banner';
+
+@import 'main';
+// @import 'tv';
