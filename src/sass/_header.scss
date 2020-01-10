@@ -1,7 +1,36 @@
 
-
+/****************************头部二级导航条**************************************/
 #header{
     width:$width;
     height: 68px;
     background: palevioletred;
+    .headerNav{
+        width:1040px;
+        height:$width;
+        float: right;
+        display: flex;  
+        justify-content: space-between;
+        align-items: center;
+
+        ul{
+            display: flex;  
+            justify-content: space-between;
+            align-items: center;
+          
+           a{
+            color: #111;
+           } 
+           a:hover{
+            color:#f00;
+           }
+        }
+        ul:first-child{
+            // width:  430px;
+            height: $width;
+           }
+           ul:last-child{
+            // width:  242px;
+            height: $width;
+           }
+    }
 }

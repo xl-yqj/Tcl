@@ -1,0 +1,29 @@
+
+/**********************页尾样式****************************/
+footer{
+    width: $width;
+    height: 468px;
+    background: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .footerTop{
+        width: $midle-width;
+        height: 125px;
+        border-bottom: 2px solid #e7e7e7;
+        background:lightpink; 
+    }
+    .footerMid{
+        width: $midle-width;
+        height: 230px;
+        background: palegreen;
+        
+    }
+    .footerBott{
+        width: $midle-width;
+        height: 112px;
+        background: lightseagreen;
+  
+    }
+}

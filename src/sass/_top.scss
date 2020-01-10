@@ -1,6 +1,39 @@
-
+  /**********************顶部样式***************************/
 #top{
     width:$width;
     height: 43px;
     background: #666666;
+/**********************导航样式**********************/
+   
+    .nav{
+        width:  $midle-width;
+        height: $width;
+        margin:0 auto;
+        display: flex;  
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+          /**********导航左右两边**************/
+         ul{
+            display: flex;  
+            justify-content: space-between;
+            align-items: center;
+          
+           a{
+            color: #b2b2b2;
+           } 
+           a:hover{
+            color:white;
+           }
+        }
+        
+       ul:first-child{
+        width:  430px;
+        height: $width;
+       }
+       ul:last-child{
+        width:  242px;
+        height: $width;
+       }
+    }
 }
