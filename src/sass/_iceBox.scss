@@ -1,6 +1,78 @@
 
 
 .iceBox{
-    @extend %box;
+    width:  $width;
     background: lightcoral;
-}
+    margin-bottom: 40px;
+  /*************冰箱标题*******************/
+    .iceBoxTittle{
+        width:  $width;
+        height: 30px;
+        @extend %box2;
+        border-left: 3px solid #f00;
+        margin-bottom: 20px;
+
+        .iceBoxTittleLeft{
+            width: 300px;
+            @extend %box2;
+            margin-left: 20px;
+        }
+        .AI{
+            @extend %box2;
+            width: 200px;
+        }
+        a:hover{
+            color: #f00;
+        }
+        h2{
+            font-size: 20px;
+        }
+        p{
+            color: #f00;
+        }
+    }
+
+/**********冰箱主内容样式************/
+    .iceBoxItems{
+        width: $width;
+        @extend %box2;
+        .iceBoxItemsLeft{
+            width:300px;
+            height: 600px;
+            img{
+                width:300px;
+                height: 600px;
+            }
+        }
+        .iceBoxItemsList{                          //主图列表
+            width: $midle-width - 300;
+            margin-left: 20px;
+            ul{
+                width: $width;
+                height: $width;
+                @extend %box2;
+                flex-wrap: wrap;
+              
+            }
+            li{
+                   width: 280px;
+                   height: 290px; 
+                   @extend %box1;
+                //    background: powderblue;
+                   margin-bottom: 10px;
+            }
+
+            img{
+                width: 220px;
+               
+            }
+
+            li:hover{
+                box-shadow: 0 0 10px 3px  #ccc ;
+                transform: translateY(-10px)  ;
+                transition: all .5s ;
+            }
+            
+        }
+    }
+ }

@@ -3,6 +3,19 @@ main{
     width: $midle-width;
     background: peru;
     padding: 60px;
+
+    .pics{
+        width: $width;
+        height: 200px;
+        @extend %box2;
+        margin-bottom: 40px;
+
+        img{
+            display: block;
+            width:380px;
+            height:  $width;
+        }
+    }
   
 }
 

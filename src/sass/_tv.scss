@@ -1,6 +1,79 @@
 
 .tv{
-    width: $midle-width;
-    height: 500px;
-    background: red;
+    width: $width;
+    // height: 500px;
+    background:papayawhip;
+    margin-bottom: 40px;
+/**********电视区域标题栏*******************/
+    .tvTittle{
+        width:  $width;
+        height: 30px;
+        @extend %box2;
+        border-left: 3px solid #f00;
+        margin-bottom: 20px;
+
+        .tvTittleLeft{
+            width: 300px;
+            @extend %box2;
+            margin-left: 20px;
+        }
+        .AI{
+            @extend %box2;
+            width: 140px;
+        }
+        a:hover{
+            color: #f00;
+        }
+        h2{
+            font-size: 20px;
+        }
+        p{
+            color: #f00;
+        }
+    }
+
+/**********电视主内容样式************/
+    .tvItems{
+        width: $width;
+        @extend %box2;
+        .tvItemsLeft{
+            width:300px;
+            height: 600px;
+            img{
+                width:300px;
+                height: 600px;
+            }
+        }
+        .tvItemsList{                          //主图列表
+            width: $midle-width - 300;
+            margin-left: 20px;
+            ul{
+                width: $width;
+                height: $width;
+                @extend %box2;
+                flex-wrap: wrap;
+              
+            }
+            li{
+                   width: 280px;
+                   height: 290px; 
+                   @extend %box1;
+                   background: powderblue;
+                   margin-bottom: 10px;
+            }
+
+            img{
+                width: 220px;
+              
+            }
+
+            li:hover{
+                box-shadow: 0 0 10px 3px  #ccc ;
+                transform: translateY(-10px)  ;
+                transition: all .5s ;
+            }
+            
+        }
+    }
+
 }

@@ -1,4 +1,4 @@
-  /**********************顶部样式***************************/
+  
 #top{
     width:$width;
     height: 43px;
@@ -6,18 +6,15 @@
 /**********************导航样式**********************/
    
     .nav{
+        @extend %box2;
         width:  $midle-width;
         height: $width;
-        margin:0 auto;
-        display: flex;  
-        justify-content: space-between;
-        align-items: center;
+        margin:0 auto;      
         font-size: 12px;
           /**********导航左右两边**************/
          ul{
-            display: flex;  
-            justify-content: space-between;
-            align-items: center;
+          
+            @extend %box2;
           
            a{
             color: #b2b2b2;

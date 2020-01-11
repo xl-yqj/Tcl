@@ -1,36 +1,44 @@
 
-/****************************头部二级导航条**************************************/
+
 #header{
     width:$width;
     height: 68px;
     background: palevioletred;
+   
     .headerNav{
         width:1040px;
         height:$width;
         float: right;
-        display: flex;  
-        justify-content: space-between;
-        align-items: center;
+        @extend %box2;
+        padding-right:50px;
+        font-size: 14px;
 
         ul{
-            display: flex;  
-            justify-content: space-between;
-            align-items: center;
-          
-           a{
-            color: #111;
-           } 
-           a:hover{
-            color:#f00;
-           }
+            @extend %box2;
+            a{
+                color: #111;
+               } 
+         
         }
         ul:first-child{
-            // width:  430px;
+            width:  420px;
             height: $width;
+            @extend %box2;
+               a:hover {
+                color:#f00;
+               }
+               a:hover #hiddenNav{
+                   display: block;
+               }
            }
-           ul:last-child{
-            // width:  242px;
-            height: $width;
+        ul:last-child{
+            width:  500px;
+            height: $width;        
+            @extend %box2;
            }
+            input{
+        width: 240px;
+        height: 30px;
+        }
     }
 }

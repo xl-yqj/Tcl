@@ -1,6 +1,78 @@
 
 .air{
-    @extend %box;
-    background: blue;
-    
+    // @extend %box;
+    width: $width;
+    background:lightpink;
+    margin-bottom: 40px;
+    /**********空调标题栏样式************/
+    .airTittle{
+        width:  $width;
+        height: 30px;
+        @extend %box2;
+        border-left: 3px solid #f00;
+        margin-bottom: 20px;
+
+        .airTittleLeft{
+            width: 300px;
+            @extend %box2;
+            margin-left: 20px;
+        }
+        .AI{
+            @extend %box2;
+            width: 140px;
+        }
+        a:hover{
+            color: #f00;
+        }
+        h2{
+            font-size: 20px;
+        }
+        p{
+            color: #f00;
+        }
+    }
+
+/**********空调主内容样式************/
+    .airItems{
+        width: $width;
+        @extend %box2;
+        .airItemsLeft{
+            width:300px;
+            height: 600px;
+            img{
+                width:300px;
+                height: 600px;
+            }
+        }
+        .airItemsList{                          //主图列表
+            width: $midle-width - 300;
+            margin-left: 20px;
+            ul{
+                width: $width;
+                height: $width;
+                @extend %box2;
+                flex-wrap: wrap;
+              
+            }
+            li{
+                   width: 280px;
+                   height: 290px; 
+                   @extend %box1;
+                   background:white;
+                   margin-bottom: 10px;
+            }
+
+            img{
+                width: 220px;
+                // height: px; 
+            }
+
+            li:hover{
+                box-shadow: 0 0 10px 3px  #ccc ;
+                transform: translateY(-10px)  ;
+                transition: all .5s ;
+            }
+            
+        }
+    }
 }

@@ -3,7 +3,7 @@
 
 //设置变量
 $width:100%;
-$midle-width:1186px;
+$midle-width:1190px;
 $bg-color:#f2f2f2;
 a{
     text-decoration: none;
@@ -13,18 +13,29 @@ a{
     width: $midle-width;
     height: 500px;
 }
-
-body{
+%box1{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
-
+%box2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+body{ 
+    @extend %box1;
+    position: relative;
+}
+/*****************************顶部样式***************************/
 @import 'top';
-
+/*****************************头部样式***************************/
 @import 'header';
-
+/*****************************隐藏导航部分样式***************************/
+@import 'hiddenNav';
+/*****************************轮播图部分样式***************************/
 @import 'banner';
 /*****************************主体部分样式***************************/
 @import 'main';
