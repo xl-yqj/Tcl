@@ -2,7 +2,6 @@
 
 .iceBox{
     width:  $width;
-    background: lightcoral;
     margin-bottom: 40px;
   /*************冰箱标题*******************/
     .iceBoxTittle{
@@ -58,7 +57,7 @@
                    width: 280px;
                    height: 290px; 
                    @extend %box1;
-                //    background: powderblue;
+                   background: white;
                    margin-bottom: 10px;
             }
 

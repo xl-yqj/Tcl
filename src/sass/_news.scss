@@ -1,0 +1,51 @@
+
+#news{
+    width: $midle-width;
+    @extend %box1;
+    margin-bottom: 40px;
+  ul{
+    width: $width;
+    height: 500px;
+    @extend %box2;
+    
+
+    li{
+        @extend %box1;
+        align-items: flex-start;
+        width: 280px;
+        height: 400px;
+      background: $bg-color;
+        div{
+            width: $width ;
+            @extend %box2;
+            margin: 10px 0;
+        }
+        
+    }
+    img{
+        width: 280px;
+
+    }
+
+    span{
+        display: block;
+        width: 60px ;
+        height: 20px;
+        background: blue;
+        color: aliceblue;
+        text-align: center;
+        line-height: 20px;
+    }
+    p{
+        font-size: 14px;
+        color: gray;
+        line-height: 20px;
+    }
+    a{
+        text-decoration: none;
+        font-size: 14px;
+        color: gray;
+        margin-top: 20px;
+    }
+  }
+}

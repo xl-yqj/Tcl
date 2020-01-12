@@ -1,6 +1,5 @@
 .appcessory{
     width: $width;
-    background:papayawhip;
     margin-bottom: 40px;
 /**********电视区域标题栏*******************/
     .appcessoryTittle{
@@ -56,7 +55,7 @@
                    width: 280px;
                    height: 290px; 
                    @extend %box1;
-                   background: powderblue;
+                   background: white;
                    margin-bottom: 10px;
             }
 
