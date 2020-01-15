@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    * {
+			padding: 0px;
+			margin: 0px;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		ul,
+		ol,
+		li {
+			list-style: none;
+		}
+
+		input {
+			border: 0;
+        }
+        
+/*****************************顶部样式***************************/
+
+#top {
+  width: 100%;
+  height: 43px;
+  background: #666666;
+  
+}
+#top .nav, #top .nav ul{
+    display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/**********************导航样式**********************/
+#top .nav {
+  width: 1190px;
+  height: 100%;
+  margin: 0 auto;
+  font-size: 12px;
+  /**********导航左右两边**************/
+}
+
+#top .nav ul a {
+  color: #b2b2b2;
+}
+
+#top .nav ul a:hover {
+  color: white;
+}
+
+#top .nav ul:first-child {
+  width: 430px;
+  height: 100%;
+}
+
+#top .nav ul:last-child {
+  width: 242px;
+  height: 100%;
+}
+
+/*****************************头部样式***************************/
+
+#header {
+  width: 100%;
+  height: 68px;
+}
+
+#header, #header .headerNav, #header .headerNav ul, #header .headerNav ul:first-child, #header .headerNav ul:last-child{
+    display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header .tclLogo {
+  width: 100px;
+  height: 60px;
+  background: url(https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2543714682,3830229523&fm=26&gp=0.jpg) no-repeat;
+  background-size: 100px 60px;
+  position: relative;
+  top: 0;
+  left: 40px;
+}
+
+#header .tclLogo h2 {
+  position: absolute;
+  left: -99999px;
+}
+
+#header .headerNav {
+  width: 1040px;
+  height: 100%;
+  float: right;
+  padding-right: 50px;
+  font-size: 14px;
+}
+
+#header .headerNav ul a {
+  color: #111;
+}
+
+#header .headerNav ul:first-child {
+  width: 420px;
+  height: 100%;
+}
+
+#header .headerNav ul:first-child a:hover {
+  color: #f00;
+}
+
+#header .headerNav ul:first-child a:hover #hiddenNav {
+  display: block;
+}
+
+#header .headerNav ul:last-child {
+  width: 500px;
+  height: 100%;
+}
+
+#header .headerNav form {
+  width: 260px;
+  height: 30px;
+  border: 1px solid gray;
+}
+
+#header .headerNav input {
+  width: 200px;
+  height: 16px;
+  margin: 5px 5px 0 10px;
+  border: 0;
+  outline: none;
+}
+/* ********************头部导航下方**************************** */
+.detailsNav{
+    width: 100%;
+    height: 50px;
+    background: #ddd;
+}
+.detailsNav ul{
+    width: 380px;
+    height: 100%;
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left:50px;
+}
+/* ********************物品详情区域**************************** */
+
+.goodsinfo{
+    width: 100%;
+    height: 500px;
+    margin: 100px 0 0 100px;
+}
+		.wrap {
+
+			float: left;
+			position: relative;
+		}
+
+		#spic {
+			width: 400px;
+			height: 400px;
+			border: 1px solid #000;
+			float: left;
+			position: relative;
+		}
+
+		#spic img {
+			width: 400px;
+			height: 400px;
+		}
+
+		#sf {
+			width: 50px;
+			height: 50px;
+			background: orange;
+			opacity: 0.3;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			visibility: hidden;
+		}
+
+		#bf {
+			width: 400px;
+			height: 500px;
+			border: 1px solid #000;
+			overflow: hidden;
+			position: absolute;
+			left: 410px;
+			visibility: hidden;
+			z-index: 100;
+		}
+
+		#bf img {
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 800px;
+			height: 800px;
+		}
+
+		#ulist {
+			position: absolute;
+			left: 0px;
+			top: 430px;
+			width: 402px;
+			height: 56px;
+			overflow: hidden;
+		}
+
+		#ulist a {
+			float: left;
+			width: 10px;
+			height: 54px;
+			border: 1px solid #ccc;
+			text-decoration: none;
+			line-height: 56px;
+			text-align: center;
+			background: #fff;
+		}
+
+		#list {
+			float: left;
+			margin-left: 18px;
+			width: 372px;
+			position: relative;
+		}
+
+		.wrap ul {
+			list-style: none;
+			float: left;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+		}
+
+		.wrap ul li {
+			float: left;
+			width: 56px;
+			height: 56px;
+			padding-right: 6px;
+		}
+
+		.wrap ul li img {
+			width: 52px;
+			height: 52px;
+			border: 1px solid #ccc;
+		}
+
+		#right {
+			position: absolute;
+			right: 0px;
+			top: 0px;
+			color: #333;
+		}
+
+		#left {
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			z-index: 2;
+			color: #fff;
+		}
+
+
+
+		.goodsinfo {
+			
+		}
+
+		.goodsinfo-img {
+			width: 200px;
+			height: 200px;
+			float: left;
+		}
+
+		.goodsinfo-img img {
+			width: 200px;
+			height: 200px;
+		}
+
+		.goodsinfo-word {
+			overflow: hidden;
+			float: left;
+		}
+
+		.p-name {
+			width: 350px;
+			height: 50px;
+			margin-left: 50px;
+			margin-top: 20px;
+		}
+
+		.p-name .loadtitle {
+			font-family: "微软雅黑";
+			color: #666666;
+			font-weight: bold;
+			font-size: 18px;
+		}
+
+		.p-price {
+			margin-left: 50px;
+			margin-top: 10px;
+			width: 300px;
+			height: 50px;
+			background: rgba(183, 183, 183, 0.4);
+			line-height: 50px;
+		}
+
+		.p-btn {
+			margin-top: 20px;
+		}
+
+		.p-btn input {
+			display: inline-block;
+			width: 50px;
+			height: 46px;
+			font-size: 20px;
+			font-family: "微软雅黑";
+			color: black;
+			margin-left: 50px;
+			border: 1px solid gray;
+			float: left;
+		}
+
+		.p-btn a {
+			display: block;
+			width: 100px;
+			height: 50px;
+			background-color: red;
+			font-size: 16px;
+			font-family: "微软雅黑";
+			color: white;
+			line-height: 50px;
+			text-align: center;
+			float: left;
+			margin-left: 10px;
+        }
+        
+
+/* *****************页尾样式*********************** */
+
+footer {
+  width: 100%;
+  background: #f0f0f0;
+  margin-top: 40px;
+}
+
+ footer,footer .footerMid ul, footer .footerBott {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer .footerMid, footer .footerBott ul, footer .footerBott .footBottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footerMid {
+  width: 1190px;
+  height: 230px;
+  padding: 20px 0;
+}
+
+footer .footerMid ul {
+  height: 200px;
+}
+
+footer .footerMid ul li {
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+footer .footerMid ul a {
+  color: gray;
+}
+
+footer .footerMid ul li:hover a {
+  color: red;
+  text-decoration: underline;
+}
+
+footer .footerBott {
+  width: 1190px;
+  padding-top: 20px;
+  align-items: flex-start;
+}
+
+footer .footerBott a {
+  font-size: 12px;
+  color: gray;
+}
+
+footer .footerBott ul a {
+  font-size: 14px;
+}
+
+footer .footerBott .footBottom {
+  width: 100%;
+  margin: 20px 0;
+  color: gray;
+  font-size: 12px;
+}
+
+footer .footerBott .footBottom a {
+  font-size: 12px;
+}
+
+footer .footerBott a:hover {
+  text-decoration: underline;
+}
+
+footer .footerBott .last {
+  position: relative;
+  left: 428px;
+}
+
+
+</style>
+
+<body>
+    <!-- -------------------------------------------------------顶部导航条-------------------------------------------- -->
+    <nav id='top'>
+        <div class='nav'>
+            <ul>
+                <li><a href="#">TCL新闻</a></li>
+                <li><a href="#">企业采购</a></li>
+                <li><a href="#">经销商之家</a></li>
+                <li><a href="#">TCL会员中心</a></li>
+                <li><a href="#">人才招聘</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">微信商城&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="#">购物车(0)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="#">注册&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="#">登录</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- ---------------------------------------------头部结构----------------------------------------------- -->
+    <header id='header'>
+        <div class='tclLogo'>
+            <h2>tcl</h2>
+        </div>
+        <div class='headerNav'>
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">空调</a></li>
+                <li><a href="#">电视</a></li>
+                <li><a href="#">冰箱</a></li>
+                <li><a href="#">洗衣机</a></li>
+                <li><a href="#">健康电器</a></li>
+                <li><a href="#">智能硬件</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">&nbsp;&nbsp;|&nbsp;&nbsp;服务</a></li>
+                <li><a href="#">视频教程</a></li>
+                <li><a href="#">XESS门店</a></li>
+                <li>
+          <form action=""> <input type="text" placeholder="领券立减"></form>
+
+                </li>
+            </ul>
+
+
+        </div>
+    </header>
+    <!-- ----------------------详情区域，放大镜效果等--------------------------------- -->
+    <div class='detailsNav'>
+        <ul>
+            <li><a href="#">TCL官网&nbsp;>&nbsp;</a></li>
+            <li><a href="#">电视&nbsp;>&nbsp;</a></li>
+            <li><p>65Q6 65英寸超薄全场景AI电视</p></li>
+        </ul>
+    </div>
+    <div class="goodsinfo">
+
+        <div class="wrap">
+            <div id="spic">
+                <img src="" alt="">
+                <div id="sf"></div>
+            </div>
+            <div id="bf">
+                <img src="" alt="" id="bpic">
+            </div>
+            <div id="ulist">
+                <a href="javascript:;" id="left">&lt;</a>
+                <div id="list">
+                    <ul>
+
+                    </ul>
+                </div>
+                <a href="javascript:;" id="right">&gt;</a>
+            </div>
+        </div>
+        <div class="goodsinfo-word">
+            <div class="p-name">
+                <a class="loadtitle" href="##"></a>
+            </div>
+            <div class="p-price"><strong><em>￥</em><i class="loadpcp"></i></strong></div>
+            <div class="p-btn">
+                <input type="text" id="count" value="1" />
+                <a href="##">加入购物车</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------页尾结构------------------------------------ -->
+    <footer>
+        <div class='footerMid'>
+            <ul>
+                <h2>帮助中心</h2>
+                <li><a href="#">购物指南</a></li>
+                <li><a href="#">支付方式</a></li>
+                <li><a href="#">配送方式</a></li>
+                <li><a href="#">交易条款</a></li>
+                <li> <a href="#">电子发票</a></li>
+            </ul>
+            <ul>
+                <h2>服务支持</h2>
+                <li><a href="#">售后服务</a></li>
+                <li><a href="#">自助服务</a></li>
+                <li><a href="#">进度查询</a></li>
+                <li><a href="#">视频教程</a></li>
+
+            </ul>
+            <ul>
+                <h2>客户服务</h2>
+                <li><a href="#">内购平台</a></li>
+                <li><a href="#">企业采购</a></li>
+                <li><a href="#">经销商之家</a></li>
+                <li><a href="#"> 十分到家</a></li>
+
+            </ul>
+            <ul>
+                <h2>关注我们</h2>
+                <li><a href="#"> 联系我们</a></li>
+                <li><a href="#">官方微博</a></li>
+
+            </ul>
+            <ul>
+                <h2>应用服务</h2>
+                <li><a href="#">雷鸟</a></li>
+                <li><a href="#">欢网</a></li>
+                <li><a href="#">金融</a></li>
+                <li><a href="#">教育</a></li>
+                <li><a href="#">全球播</a></li>
+            </ul>
+            <ul>
+                <h2>TCL官网商城</h2>
+                <li><a href="#">
+                        <img src="http://www.tcl.com/app/images/wechat.jpg" alt="">
+                    </a></li>
+
+            </ul>
+            <ul>
+                <li>
+                    <span>4008-123456</span>
+                </li>
+                <li>
+                    <p>（24小时在线，仅收市话费）</p>
+                </li>
+                <li><a href="">
+                        <span></span>
+                        24小时在线服务
+                    </a></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class='footerBott'>
+            <ul>
+                <li><a href="">关于TCL &nbsp;&nbsp;| &nbsp;&nbsp; </a></li>
+                <li><a href="">投资者关系 &nbsp;&nbsp; | &nbsp;&nbsp; </a></li>
+                <li><a href="">社会责任 &nbsp;&nbsp; | &nbsp;&nbsp; </a></li>
+                <li><a href="">新闻中心 &nbsp;&nbsp; | &nbsp;&nbsp; </a></li>
+                <li><a href="">人才招聘 &nbsp;&nbsp; |&nbsp;&nbsp; </a></li>
+                <li><a href="">成员网站 </a></li>
+            </ul>
+            <div class="footBottom">
+                <div>
+                    ©2010-2019 TCL CORPORATION All Rights Reserved. TCL集团股份有限公司版权所有 粤ICP备05040863号
+                    <a href="">使用条款</a>
+                    <a href="">法律声明</a>
+                    <a href="">隐私政策</a>
+                    <a href="">账户注册协议</a>
+                    <a href="">侵权投诉规则</a>
+                </div>
+                <div>
+                    <a href="">中文简体 |</a>
+                    <a href="">English</a>
+                </div>
+            </div>
+            <a href="">粤网公安备案44133002100088号</a>
+            <div class="last">
+                <a href=""> <img src="http://v.trustutn.org/images/cert/brand_bottom_small.jpg" alt=""></a>
+                <a href=""> <img src="http://www.tcl.com/app/images/gdgs.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

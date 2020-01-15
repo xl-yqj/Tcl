@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/css/cartlist.css">
+</head>
+
+<body>
+    <!-- -------------------------------------------------------顶部导航条-------------------------------------------- -->
+    <nav id='top'>
+        <div class='nav'>
+            <ul>
+                <li><a href="#">TCL新闻</a></li>
+                <li><a href="#">企业采购</a></li>
+                <li><a href="#">经销商之家</a></li>
+                <li><a href="#">TCL会员中心</a></li>
+                <li><a href="#">人才招聘</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">微信商城&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="#">购物车(0)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="#">注册&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="#">登录</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- ------------------ -->
+    <header>
+        <div class='top'>
+            <a href="#"><img src="http://user.tcl.com/img/logo.png" alt=""></a>
+            <span>我的购物车</span>
+        </div>
+    </header>
+    <!-- ----------------------------购物车列表--------------------------------- -->
+    <div id="container" class="cart">
+        <!--全部商品哪一行-->
+        <div class="cart-top">
+            <div class="cart-top-left">
+                <a href=""><em>全部商品</em></a>
+            </div>
+            <div class="footline">
+                <div class="line"></div>
+            </div>
+        </div>
+        <!--包裹购物车-->
+        <div class="cart-wrap">
+            <div class="cartmain">
+                <div class="cart-thead">
+                    <div class="cart-col t-checkbox">
+                        <div class="cart-checkbox">
+                            <input type="checkbox" checked="" name="" id="" class="allsel" value="" /> 全选
+                        </div>
+                    </div>
+                    <div class="cart-col t-goods">商品</div>
+                    <div class="cart-col t-props"></div>
+                    <div class="cart-col t-prices">单价(元)</div>
+                    <div class="cart-col t-quantity">数量</div>
+                    <div class="cart-col t-sum">小计(元)</div>
+                    <div class="cart-col t-action">操作</div>
+                </div>
+                <div id="cart-list">
+                    <div class="cart-item-list">
+                        <div class="cart-tbody">
+                            <div class="item-list">
+                                <!-- 商品渲染模块 -->
+                                <div class="goods-item goods-item-sele" style="display:none">
+                                    <div class="goods-info">
+                                        <div class="cell b-checkbox">
+                                            <div class="cart-checkbox">
+                                                <input type="checkbox" checked="" name="" id="" value="" />
+                                                <span class="line-circle"></span>
+                                            </div>
+                                        </div>
+                                        <div class="cell b-goods">
+                                            <div class="goods-name">
+                                                <div class="goods-pic">
+                                                    <a href=""><img src="" alt="" /></a>
+                                                </div>
+                                                <div class="goods-msg">
+                                                    <div class="goods-d-info">
+                                                        <a href="">Apple iMac 27英寸一体机（Core i5
+                                                            处理器/8GB内存/1TB存储/2GB独显/Retina 5K屏 MK462CH/A）</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="cell b-price">
+                                            <strong>13488.00</strong>
+                                        </div>
+                                        <div class="cell b-quantity">
+                                            <div class="quantity-form">
+                                                <a class="quantity-down" href="javascript:void(0)">-</a>
+                                                <input type="text" value="1" />
+                                                <a class="quantity-add" href="javascript:void(0)">+</a>
+                                            </div>
+                                        </div>
+                                        <div class="cell b-sum">
+                                            <strong>13488.00</strong>
+                                        </div>
+                                        <div class="cell b-action">
+                                            <a href="javascript:void(0)">删除</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="cart-floatbar">
+                <div class="operation">
+                    <a href="javascript:void(0)">删除选中的商品</a>
+                </div>
+                <div class="toolbar-right">
+                    <div class="btn-area">
+                        <a href=""></a>
+                    </div>
+                    <div class="price-sum">
+                        <span class="txt">总价（不含运费）：</span>
+                        <span class="totalprice">￥0.00</span>
+                        <span class="txt">已节省：</span>
+                        <span class="totalsave">-￥0.00</span>
+                    </div>
+                    <div class="amount-sum">
+                        已选择
+                        <em>0</em> 件商品
+                        <b></b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------页尾结构------------------------------------ -->
+    <footer>
+        <div class='footerMid'>
+            <ul>
+                <h2>帮助中心</h2>
+                <li><a href="#">购物指南</a></li>
+                <li><a href="#">支付方式</a></li>
+                <li><a href="#">配送方式</a></li>
+                <li><a href="#">交易条款</a></li>
+                <li> <a href="#">电子发票</a></li>
+            </ul>
+            <ul>
+                <h2>服务支持</h2>
+                <li><a href="#">售后服务</a></li>
+                <li><a href="#">自助服务</a></li>
+                <li><a href="#">进度查询</a></li>
+                <li><a href="#">视频教程</a></li>
+
+            </ul>
+            <ul>
+                <h2>客户服务</h2>
+                <li><a href="#">内购平台</a></li>
+                <li><a href="#">企业采购</a></li>
+                <li><a href="#">经销商之家</a></li>
+                <li><a href="#"> 十分到家</a></li>
+
+            </ul>
+            <ul>
+                <h2>关注我们</h2>
+                <li><a href="#"> 联系我们</a></li>
+                <li><a href="#">官方微博</a></li>
+
+            </ul>
+            <ul>
+                <h2>应用服务</h2>
+                <li><a href="#">雷鸟</a></li>
+                <li><a href="#">欢网</a></li>
+                <li><a href="#">金融</a></li>
+                <li><a href="#">教育</a></li>
+                <li><a href="#">全球播</a></li>
+            </ul>
+            <ul>
+                <h2>TCL官网商城</h2>
+                <li><a href="#">
+                        <img src="http://www.tcl.com/app/images/wechat.jpg" alt="">
+                    </a></li>
+
+            </ul>
+            <ul>
+                <li>
+                    <span>4008-123456</span>
+                </li>
+                <li>
+                    <p>（24小时在线，仅收市话费）</p>
+                </li>
+                <li><a href="">
+                        <span></span>
+                        24小时在线服务
+                    </a></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class='footerBott'>
+            <ul>
+                <li><a href="">关于TCL &nbsp;&nbsp;| &nbsp;&nbsp; </a></li>
+                <li><a href="">投资者关系 &nbsp;&nbsp; | &nbsp;&nbsp; </a></li>
+                <li><a href="">社会责任 &nbsp;&nbsp; | &nbsp;&nbsp; </a></li>
+                <li><a href="">新闻中心 &nbsp;&nbsp; | &nbsp;&nbsp; </a></li>
+                <li><a href="">人才招聘 &nbsp;&nbsp; |&nbsp;&nbsp; </a></li>
+                <li><a href="">成员网站 </a></li>
+            </ul>
+            <div class="footBottom">
+                <div>
+                    ©2010-2019 TCL CORPORATION All Rights Reserved. TCL集团股份有限公司版权所有 粤ICP备05040863号
+                    <a href="">使用条款</a>
+                    <a href="">法律声明</a>
+                    <a href="">隐私政策</a>
+                    <a href="">账户注册协议</a>
+                    <a href="">侵权投诉规则</a>
+                </div>
+                <div>
+                    <a href="">中文简体 |</a>
+                    <a href="">English</a>
+                </div>
+            </div>
+            <a href="">粤网公安备案44133002100088号</a>
+            <div class="last">
+                <a href=""> <img src="http://v.trustutn.org/images/cert/brand_bottom_small.jpg" alt=""></a>
+                <a href=""> <img src="http://www.tcl.com/app/images/gdgs.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
