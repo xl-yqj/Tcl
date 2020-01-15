@@ -1,17 +1,18 @@
 
-// !function IndexRender(){}()
+// http://xlxlyqj.xlismine.top:8888/tcl/category/2
 class IndexRender{
     constructor(){
         this.tvItemsList=$('tvItemsList');
     }
     init(){
-        // console.log('what?');
+       
         $.ajax({
             url:"http://xlxlyqj.xlismine.top:8888/tcl/category/2",
             dataType:"json"       
         }).done(()=>{
             let strhtml="<ul>";
             $.each(data,function(index,value){
+                console.log(data);
                 strhtml+=`
                 <li>
                 <a href="details.html?sid=${value.id}">
