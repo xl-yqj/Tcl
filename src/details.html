@@ -188,7 +188,8 @@
 			position: absolute;
 			left: 0px;
 			top: 0px;
-			visibility: hidden;
+            visibility: hidden;
+            cursor: move;
 		}
 
 		#bf {
@@ -199,7 +200,9 @@
 			position: absolute;
 			left: 410px;
 			visibility: hidden;
-			z-index: 100;
+            z-index: 100;
+            /* add******** */
+            float: left;
 		}
 
 		#bf img {
@@ -249,7 +252,8 @@
 			float: left;
 			width: 56px;
 			height: 56px;
-			padding-right: 6px;
+            padding-right: 6px;
+            cursor: pointer;
 		}
 
 		.wrap ul li img {
@@ -272,13 +276,7 @@
 			z-index: 2;
 			color: #fff;
 		}
-
-
-
-		.goodsinfo {
-			
-		}
-
+/* ***************** */
 		.goodsinfo-img {
 			width: 200px;
 			height: 200px;
@@ -479,7 +477,7 @@ footer .footerBott .last {
 
         </div>
     </header>
-    <!-- ----------------------详情区域，放大镜效果等--------------------------------- -->
+   
     <div class='detailsNav'>
         <ul>
             <li><a href="#">TCL官网&nbsp;>&nbsp;</a></li>
@@ -487,6 +485,8 @@ footer .footerBott .last {
             <li><p>65Q6 65英寸超薄全场景AI电视</p></li>
         </ul>
     </div>
+
+     <!-- ----------------------详情区域，放大镜效果等--------------------------------- -->
     <div class="goodsinfo">
 
         <div class="wrap">
@@ -498,6 +498,7 @@ footer .footerBott .last {
                 <img src="" alt="" id="bpic">
             </div>
             <div id="ulist">
+                <!-- 运动列表 -->
                 <a href="javascript:;" id="left">&lt;</a>
                 <div id="list">
                     <ul>
@@ -611,7 +612,7 @@ footer .footerBott .last {
             </div>
         </div>
     </footer>
-
+<script src="../dist/bundle.js"></script>
 </body>
 
 </html>

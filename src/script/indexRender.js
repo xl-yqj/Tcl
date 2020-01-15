@@ -1,34 +1,36 @@
 
 // http://xlxlyqj.xlismine.top:8888/tcl/category/2
-class IndexRender{
-    constructor(){
-        this.tvItemsList=$('tvItemsList');
+class IndexRender {
+    constructor() {
+        this.tvItemsList = $('.tvItemsList');
     }
-    init(){
-       
+    init() {
+
         $.ajax({
-            url:"http://xlxlyqj.xlismine.top:8888/tcl/category/2",
-            dataType:"json"       
-        }).done(()=>{
-            let strhtml="<ul>";
-            $.each(data,function(index,value){
-                console.log(data);
-                strhtml+=`
+            url: "http://xlxlyqj.xlismine.top:8888/tcl/category/2",
+            dataType: "json"
+        }).done((data) => {
+
+            let $strhtml = "<ul>";
+            $.each(data, function (index, value) {              
+                $strhtml += `
                 <li>
-                <a href="details.html?sid=${value.id}">
+                    <a href="details.html?sid=${value.id}">
                         <img src="${value.pic_url}">
                         <h3>${value.pname}</h3>
-                        <p>${value.desc}</p>
+                     
                         <span>${value.price}</span>
-                </a>
+                    </a>
                 </li>
-                `
-            })
-            strhtml+='</ul>'
-        })
+                `;
+            });
+            $strhtml += '</ul>';
+            this.tvItemsList.html($strhtml);
+           
+        });
     }
 
 }
-export{
+export {
     IndexRender
 }

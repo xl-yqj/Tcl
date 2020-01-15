@@ -64,12 +64,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 8, ../../src/sass/index1.scss */
+/* line 8, ../sass/index1.scss */
 a {
   text-decoration: none;
 }
 
-/* line 16, ../../src/sass/index1.scss */
+/* line 16, ../sass/index1.scss */
 body, #hiddenNav ul li, #banner, #banner .leftUl, #banner .hiddenUl li .words, .tv .tvItems .tvItemsList li, .air .airItems .airItemsList li, .iceBox .iceBoxItems .iceBoxItemsList li, .washBox .washBoxItems .washBoxItemsList li, .kichen .kichenItems .kichenItemsList li, .appcessory .appcessoryItems .appcessoryItemsList li, #news, #news ul li, footer .footerMid ul, footer .footerBott {
   display: flex;
   flex-direction: column;
@@ -77,7 +77,7 @@ body, #hiddenNav ul li, #banner, #banner .leftUl, #banner .hiddenUl li .words, .
   align-items: center;
 }
 
-/* line 22, ../../src/sass/index1.scss */
+/* line 22, ../sass/index1.scss */
 #top .nav, #top .nav ul, #header, #header .headerNav, #header .headerNav ul, #header .headerNav ul:first-child, #header .headerNav ul:last-child, #hiddenNav ul, #banner .leftUl li, #banner .hiddenUl, #banner .hiddenUl li, main .pics, .tv .tvTittle, .tv .tvTittle .tvTittleLeft, .tv .tvTittle .AI, .tv .tvItems, .tv .tvItems .tvItemsList ul, .air .airTittle, .air .airTittle .airTittleLeft, .air .airTittle .AI, .air .airItems, .air .airItems .airItemsList ul, .iceBox .iceBoxTittle, .iceBox .iceBoxTittle .iceBoxTittleLeft, .iceBox .iceBoxTittle .AI, .iceBox .iceBoxItems, .iceBox .iceBoxItems .iceBoxItemsList ul, .washBox .washBoxTittle, .washBox .washBoxTittle .washBoxTittleLeft, .washBox .washBoxTittle .AI, .washBox .washBoxItems, .washBox .washBoxItems .washBoxItemsList ul, .kichen .kichenTittle, .kichen .kichenTittle .kichenTittleLeft, .kichen .kichenTittle .AI, .kichen .kichenItems, .kichen .kichenItems .kichenItemsList ul, .appcessory .appcessoryTittle, .appcessory .appcessoryTittle .appcessoryTittleLeft, .appcessory .appcessoryTittle .AI, .appcessory .appcessoryItems, .appcessory .appcessoryItems .appcessoryItemsList ul, #news ul, #news ul li div, footer .footerTop, footer .footerMid, footer .footerBott ul, footer .footerBott .footBottom {
   display: flex;
   flex-direction: row;
@@ -85,20 +85,20 @@ body, #hiddenNav ul li, #banner, #banner .leftUl, #banner .hiddenUl li .words, .
   align-items: center;
 }
 
-/* line 28, ../../src/sass/index1.scss */
+/* line 28, ../sass/index1.scss */
 body {
   position: relative;
 }
 
 /*****************************顶部样式***************************/
-/* line 2, ../../src/sass/_top.scss */
+/* line 2, ../sass/_top.scss */
 #top {
   width: 100%;
   height: 43px;
   background: #666666;
   /**********************导航样式**********************/
 }
-/* line 8, ../../src/sass/_top.scss */
+/* line 8, ../sass/_top.scss */
 #top .nav {
   width: 1190px;
   height: 100%;
@@ -106,32 +106,32 @@ body {
   font-size: 12px;
   /**********导航左右两边**************/
 }
-/* line 19, ../../src/sass/_top.scss */
+/* line 19, ../sass/_top.scss */
 #top .nav ul a {
   color: #b2b2b2;
 }
-/* line 22, ../../src/sass/_top.scss */
+/* line 22, ../sass/_top.scss */
 #top .nav ul a:hover {
   color: white;
 }
-/* line 27, ../../src/sass/_top.scss */
+/* line 27, ../sass/_top.scss */
 #top .nav ul:first-child {
   width: 430px;
   height: 100%;
 }
-/* line 31, ../../src/sass/_top.scss */
+/* line 31, ../sass/_top.scss */
 #top .nav ul:last-child {
   width: 242px;
   height: 100%;
 }
 
 /*****************************头部样式***************************/
-/* line 3, ../../src/sass/_header.scss */
+/* line 3, ../sass/_header.scss */
 #header {
   width: 100%;
   height: 68px;
 }
-/* line 7, ../../src/sass/_header.scss */
+/* line 7, ../sass/_header.scss */
 #header .tclLogo {
   width: 100px;
   height: 60px;
@@ -141,12 +141,12 @@ body {
   top: 0;
   left: 40px;
 }
-/* line 16, ../../src/sass/_header.scss */
+/* line 16, ../sass/_header.scss */
 #header .tclLogo h2 {
   position: absolute;
   left: -99999px;
 }
-/* line 22, ../../src/sass/_header.scss */
+/* line 22, ../sass/_header.scss */
 #header .headerNav {
   width: 1040px;
   height: 100%;
@@ -154,35 +154,35 @@ body {
   padding-right: 50px;
   font-size: 14px;
 }
-/* line 32, ../../src/sass/_header.scss */
+/* line 32, ../sass/_header.scss */
 #header .headerNav ul a {
   color: #111;
 }
-/* line 37, ../../src/sass/_header.scss */
+/* line 37, ../sass/_header.scss */
 #header .headerNav ul:first-child {
   width: 420px;
   height: 100%;
 }
-/* line 41, ../../src/sass/_header.scss */
+/* line 41, ../sass/_header.scss */
 #header .headerNav ul:first-child a:hover {
   color: #f00;
 }
-/* line 44, ../../src/sass/_header.scss */
+/* line 44, ../sass/_header.scss */
 #header .headerNav ul:first-child a:hover #hiddenNav {
   display: block;
 }
-/* line 48, ../../src/sass/_header.scss */
+/* line 48, ../sass/_header.scss */
 #header .headerNav ul:last-child {
   width: 500px;
   height: 100%;
 }
-/* line 53, ../../src/sass/_header.scss */
+/* line 53, ../sass/_header.scss */
 #header .headerNav form {
   width: 260px;
   height: 30px;
   border: 1px solid gray;
 }
-/* line 59, ../../src/sass/_header.scss */
+/* line 59, ../sass/_header.scss */
 #header .headerNav input {
   width: 200px;
   height: 16px;
@@ -192,7 +192,7 @@ body {
 }
 
 /*****************************隐藏导航部分样式***************************/
-/* line 2, ../../src/sass/_hiddenNav.scss */
+/* line 2, ../sass/_hiddenNav.scss */
 #hiddenNav {
   width: 100%;
   height: 260px;
@@ -203,27 +203,27 @@ body {
   z-index: 12;
   display: none;
 }
-/* line 12, ../../src/sass/_hiddenNav.scss */
+/* line 12, ../sass/_hiddenNav.scss */
 #hiddenNav ul {
   width: 1100px;
   height: 100%;
   margin: 0 auto;
 }
-/* line 18, ../../src/sass/_hiddenNav.scss */
+/* line 18, ../sass/_hiddenNav.scss */
 #hiddenNav ul li {
   width: 160px;
   height: 100%;
   background: lawngreen;
   font-size: 12px;
 }
-/* line 25, ../../src/sass/_hiddenNav.scss */
+/* line 25, ../sass/_hiddenNav.scss */
 #hiddenNav ul img {
   width: 100%;
   margin-bottom: 20px;
 }
 
 /*****************************轮播图部分样式***************************/
-/* line 3, ../../src/sass/_banner.scss */
+/* line 3, ../sass/_banner.scss */
 #banner {
   width: 100%;
   background: lightgreen;
@@ -232,7 +232,7 @@ body {
   /***************轮播图里左侧框**********************/
   /***************轮播图里隐藏的大框**********************/
 }
-/* line 10, ../../src/sass/_banner.scss */
+/* line 10, ../sass/_banner.scss */
 #banner .leftUl {
   width: 200px;
   height: 100%;
@@ -245,22 +245,22 @@ body {
   color: white;
   justify-content: space-around;
 }
-/* line 22, ../../src/sass/_banner.scss */
+/* line 22, ../sass/_banner.scss */
 #banner .leftUl li {
   width: 60%;
   height: 50px;
   padding: 0 40px;
   font-size: 14px;
 }
-/* line 29, ../../src/sass/_banner.scss */
+/* line 29, ../sass/_banner.scss */
 #banner .leftUl li:hover {
   background: gray;
 }
-/* line 33, ../../src/sass/_banner.scss */
+/* line 33, ../sass/_banner.scss */
 #banner .leftUl li:hover .hiddenUl {
   visibility: visible;
 }
-/* line 39, ../../src/sass/_banner.scss */
+/* line 39, ../sass/_banner.scss */
 #banner .hiddenUl {
   width: 600px;
   height: 100%;
@@ -273,19 +273,19 @@ body {
   padding: 20px  20px;
   flex-wrap: wrap;
 }
-/* line 52, ../../src/sass/_banner.scss */
+/* line 52, ../sass/_banner.scss */
 #banner .hiddenUl li {
   width: 260px;
   font-size: 14px;
   margin-bottom: 20px;
 }
-/* line 61, ../../src/sass/_banner.scss */
+/* line 61, ../sass/_banner.scss */
 #banner .hiddenUl img {
   width: 100px;
 }
 
 /*****************************左侧楼梯部分样式***************************/
-/* line 1, ../../src/sass/_stairs.scss */
+/* line 1, ../sass/_stairs.scss */
 #stairs {
   width: 50px;
   height: 305px;
@@ -293,11 +293,11 @@ body {
   top: 200px;
   left: 0;
 }
-/* line 7, ../../src/sass/_stairs.scss */
+/* line 7, ../sass/_stairs.scss */
 #stairs ul {
   background: wheat;
 }
-/* line 9, ../../src/sass/_stairs.scss */
+/* line 9, ../sass/_stairs.scss */
 #stairs ul li {
   width: 50px;
   height: 50px;
@@ -307,25 +307,25 @@ body {
   font-size: 12px;
   color: gray;
 }
-/* line 18, ../../src/sass/_stairs.scss */
+/* line 18, ../sass/_stairs.scss */
 #stairs ul li:last-child {
   border-bottom: 0;
 }
 
 /*****************************主体部分样式***************************/
-/* line 2, ../../src/sass/_main.scss */
+/* line 2, ../sass/_main.scss */
 main {
   width: 1190px;
   background: #f2f2f2;
   padding: 60px;
 }
-/* line 7, ../../src/sass/_main.scss */
+/* line 7, ../sass/_main.scss */
 main .pics {
   width: 100%;
   height: 200px;
   margin-bottom: 40px;
 }
-/* line 13, ../../src/sass/_main.scss */
+/* line 13, ../sass/_main.scss */
 main .pics img {
   display: block;
   width: 380px;
@@ -333,78 +333,78 @@ main .pics img {
 }
 
 /*************电视部分样式****************/
-/* line 2, ../../src/sass/_tv.scss */
+/* line 2, ../sass/_tv.scss */
 .tv {
   width: 100%;
   margin-bottom: 40px;
   /**********电视区域标题栏*******************/
   /**********电视主内容样式************/
 }
-/* line 6, ../../src/sass/_tv.scss */
+/* line 6, ../sass/_tv.scss */
 .tv .tvTittle {
   width: 100%;
   height: 30px;
   border-left: 3px solid #f00;
   margin-bottom: 20px;
 }
-/* line 13, ../../src/sass/_tv.scss */
+/* line 13, ../sass/_tv.scss */
 .tv .tvTittle .tvTittleLeft {
   width: 300px;
   margin-left: 20px;
 }
-/* line 18, ../../src/sass/_tv.scss */
+/* line 18, ../sass/_tv.scss */
 .tv .tvTittle .AI {
   width: 140px;
 }
-/* line 22, ../../src/sass/_tv.scss */
+/* line 22, ../sass/_tv.scss */
 .tv .tvTittle a:hover {
   color: #f00;
 }
-/* line 25, ../../src/sass/_tv.scss */
+/* line 25, ../sass/_tv.scss */
 .tv .tvTittle h2 {
   font-size: 20px;
 }
-/* line 28, ../../src/sass/_tv.scss */
+/* line 28, ../sass/_tv.scss */
 .tv .tvTittle p {
   color: #f00;
 }
-/* line 34, ../../src/sass/_tv.scss */
+/* line 34, ../sass/_tv.scss */
 .tv .tvItems {
   width: 100%;
 }
-/* line 37, ../../src/sass/_tv.scss */
+/* line 37, ../sass/_tv.scss */
 .tv .tvItems .tvItemsLeft {
   width: 300px;
   height: 600px;
 }
-/* line 40, ../../src/sass/_tv.scss */
+/* line 40, ../sass/_tv.scss */
 .tv .tvItems .tvItemsLeft img {
   width: 300px;
   height: 600px;
 }
-/* line 45, ../../src/sass/_tv.scss */
+/* line 45, ../sass/_tv.scss */
 .tv .tvItems .tvItemsList {
   width: 890px;
   margin-left: 20px;
 }
-/* line 48, ../../src/sass/_tv.scss */
+/* line 48, ../sass/_tv.scss */
 .tv .tvItems .tvItemsList ul {
   width: 100%;
   height: 100%;
   flex-wrap: wrap;
 }
-/* line 55, ../../src/sass/_tv.scss */
+/* line 55, ../sass/_tv.scss */
 .tv .tvItems .tvItemsList li {
   width: 280px;
   height: 290px;
   background: white;
   margin-bottom: 10px;
 }
-/* line 63, ../../src/sass/_tv.scss */
+/* line 63, ../sass/_tv.scss */
 .tv .tvItems .tvItemsList img {
   width: 220px;
 }
-/* line 68, ../../src/sass/_tv.scss */
+/* line 68, ../sass/_tv.scss */
 .tv .tvItems .tvItemsList li:hover {
   box-shadow: 0 0 10px 3px #ccc;
   transform: translateY(-10px);
@@ -412,78 +412,78 @@ main .pics img {
 }
 
 /*************空调部分样式****************/
-/* line 2, ../../src/sass/_air.scss */
+/* line 2, ../sass/_air.scss */
 .air {
   width: 100%;
   margin-bottom: 40px;
   /**********空调标题栏样式************/
   /**********空调主内容样式************/
 }
-/* line 6, ../../src/sass/_air.scss */
+/* line 6, ../sass/_air.scss */
 .air .airTittle {
   width: 100%;
   height: 30px;
   border-left: 3px solid #f00;
   margin-bottom: 20px;
 }
-/* line 13, ../../src/sass/_air.scss */
+/* line 13, ../sass/_air.scss */
 .air .airTittle .airTittleLeft {
   width: 300px;
   margin-left: 20px;
 }
-/* line 18, ../../src/sass/_air.scss */
+/* line 18, ../sass/_air.scss */
 .air .airTittle .AI {
   width: 140px;
 }
-/* line 22, ../../src/sass/_air.scss */
+/* line 22, ../sass/_air.scss */
 .air .airTittle a:hover {
   color: #f00;
 }
-/* line 25, ../../src/sass/_air.scss */
+/* line 25, ../sass/_air.scss */
 .air .airTittle h2 {
   font-size: 20px;
 }
-/* line 28, ../../src/sass/_air.scss */
+/* line 28, ../sass/_air.scss */
 .air .airTittle p {
   color: #f00;
 }
-/* line 34, ../../src/sass/_air.scss */
+/* line 34, ../sass/_air.scss */
 .air .airItems {
   width: 100%;
 }
-/* line 37, ../../src/sass/_air.scss */
+/* line 37, ../sass/_air.scss */
 .air .airItems .airItemsLeft {
   width: 300px;
   height: 600px;
 }
-/* line 40, ../../src/sass/_air.scss */
+/* line 40, ../sass/_air.scss */
 .air .airItems .airItemsLeft img {
   width: 300px;
   height: 600px;
 }
-/* line 45, ../../src/sass/_air.scss */
+/* line 45, ../sass/_air.scss */
 .air .airItems .airItemsList {
   width: 890px;
   margin-left: 20px;
 }
-/* line 48, ../../src/sass/_air.scss */
+/* line 48, ../sass/_air.scss */
 .air .airItems .airItemsList ul {
   width: 100%;
   height: 100%;
   flex-wrap: wrap;
 }
-/* line 55, ../../src/sass/_air.scss */
+/* line 55, ../sass/_air.scss */
 .air .airItems .airItemsList li {
   width: 280px;
   height: 290px;
   background: white;
   margin-bottom: 10px;
 }
-/* line 63, ../../src/sass/_air.scss */
+/* line 63, ../sass/_air.scss */
 .air .airItems .airItemsList img {
   width: 220px;
 }
-/* line 68, ../../src/sass/_air.scss */
+/* line 68, ../sass/_air.scss */
 .air .airItems .airItemsList li:hover {
   box-shadow: 0 0 10px 3px #ccc;
   transform: translateY(-10px);
@@ -491,78 +491,78 @@ main .pics img {
 }
 
 /*************冰箱部分样式****************/
-/* line 3, ../../src/sass/_iceBox.scss */
+/* line 3, ../sass/_iceBox.scss */
 .iceBox {
   width: 100%;
   margin-bottom: 40px;
   /*************冰箱标题*******************/
   /**********冰箱主内容样式************/
 }
-/* line 7, ../../src/sass/_iceBox.scss */
+/* line 7, ../sass/_iceBox.scss */
 .iceBox .iceBoxTittle {
   width: 100%;
   height: 30px;
   border-left: 3px solid #f00;
   margin-bottom: 20px;
 }
-/* line 14, ../../src/sass/_iceBox.scss */
+/* line 14, ../sass/_iceBox.scss */
 .iceBox .iceBoxTittle .iceBoxTittleLeft {
   width: 300px;
   margin-left: 20px;
 }
-/* line 19, ../../src/sass/_iceBox.scss */
+/* line 19, ../sass/_iceBox.scss */
 .iceBox .iceBoxTittle .AI {
   width: 200px;
 }
-/* line 23, ../../src/sass/_iceBox.scss */
+/* line 23, ../sass/_iceBox.scss */
 .iceBox .iceBoxTittle a:hover {
   color: #f00;
 }
-/* line 26, ../../src/sass/_iceBox.scss */
+/* line 26, ../sass/_iceBox.scss */
 .iceBox .iceBoxTittle h2 {
   font-size: 20px;
 }
-/* line 29, ../../src/sass/_iceBox.scss */
+/* line 29, ../sass/_iceBox.scss */
 .iceBox .iceBoxTittle p {
   color: #f00;
 }
-/* line 35, ../../src/sass/_iceBox.scss */
+/* line 35, ../sass/_iceBox.scss */
 .iceBox .iceBoxItems {
   width: 100%;
 }
-/* line 38, ../../src/sass/_iceBox.scss */
+/* line 38, ../sass/_iceBox.scss */
 .iceBox .iceBoxItems .iceBoxItemsLeft {
   width: 300px;
   height: 600px;
 }
-/* line 41, ../../src/sass/_iceBox.scss */
+/* line 41, ../sass/_iceBox.scss */
 .iceBox .iceBoxItems .iceBoxItemsLeft img {
   width: 300px;
   height: 600px;
 }
-/* line 46, ../../src/sass/_iceBox.scss */
+/* line 46, ../sass/_iceBox.scss */
 .iceBox .iceBoxItems .iceBoxItemsList {
   width: 890px;
   margin-left: 20px;
 }
-/* line 49, ../../src/sass/_iceBox.scss */
+/* line 49, ../sass/_iceBox.scss */
 .iceBox .iceBoxItems .iceBoxItemsList ul {
   width: 100%;
   height: 100%;
   flex-wrap: wrap;
 }
-/* line 56, ../../src/sass/_iceBox.scss */
+/* line 56, ../sass/_iceBox.scss */
 .iceBox .iceBoxItems .iceBoxItemsList li {
   width: 280px;
   height: 290px;
   background: white;
   margin-bottom: 10px;
 }
-/* line 64, ../../src/sass/_iceBox.scss */
+/* line 64, ../sass/_iceBox.scss */
 .iceBox .iceBoxItems .iceBoxItemsList img {
   width: 220px;
 }
-/* line 69, ../../src/sass/_iceBox.scss */
+/* line 69, ../sass/_iceBox.scss */
 .iceBox .iceBoxItems .iceBoxItemsList li:hover {
   box-shadow: 0 0 10px 3px #ccc;
   transform: translateY(-10px);
@@ -570,78 +570,78 @@ main .pics img {
 }
 
 /*************洗衣机部分样式****************/
-/* line 1, ../../src/sass/_washBox.scss */
+/* line 1, ../sass/_washBox.scss */
 .washBox {
   width: 100%;
   margin-bottom: 40px;
   /**********洗衣机区域标题栏*******************/
   /**********洗衣机主内容样式************/
 }
-/* line 6, ../../src/sass/_washBox.scss */
+/* line 6, ../sass/_washBox.scss */
 .washBox .washBoxTittle {
   width: 100%;
   height: 30px;
   border-left: 3px solid #f00;
   margin-bottom: 20px;
 }
-/* line 13, ../../src/sass/_washBox.scss */
+/* line 13, ../sass/_washBox.scss */
 .washBox .washBoxTittle .washBoxTittleLeft {
   width: 200px;
   margin-left: 20px;
 }
-/* line 18, ../../src/sass/_washBox.scss */
+/* line 18, ../sass/_washBox.scss */
 .washBox .washBoxTittle .AI {
   width: 80px;
 }
-/* line 22, ../../src/sass/_washBox.scss */
+/* line 22, ../sass/_washBox.scss */
 .washBox .washBoxTittle a:hover {
   color: #f00;
 }
-/* line 25, ../../src/sass/_washBox.scss */
+/* line 25, ../sass/_washBox.scss */
 .washBox .washBoxTittle h2 {
   font-size: 20px;
 }
-/* line 28, ../../src/sass/_washBox.scss */
+/* line 28, ../sass/_washBox.scss */
 .washBox .washBoxTittle p {
   color: #f00;
 }
-/* line 34, ../../src/sass/_washBox.scss */
+/* line 34, ../sass/_washBox.scss */
 .washBox .washBoxItems {
   width: 100%;
 }
-/* line 37, ../../src/sass/_washBox.scss */
+/* line 37, ../sass/_washBox.scss */
 .washBox .washBoxItems .washBoxItemsLeft {
   width: 300px;
   height: 600px;
 }
-/* line 40, ../../src/sass/_washBox.scss */
+/* line 40, ../sass/_washBox.scss */
 .washBox .washBoxItems .washBoxItemsLeft img {
   width: 300px;
   height: 600px;
 }
-/* line 45, ../../src/sass/_washBox.scss */
+/* line 45, ../sass/_washBox.scss */
 .washBox .washBoxItems .washBoxItemsList {
   width: 890px;
   margin-left: 20px;
 }
-/* line 48, ../../src/sass/_washBox.scss */
+/* line 48, ../sass/_washBox.scss */
 .washBox .washBoxItems .washBoxItemsList ul {
   width: 100%;
   height: 100%;
   flex-wrap: wrap;
 }
-/* line 55, ../../src/sass/_washBox.scss */
+/* line 55, ../sass/_washBox.scss */
 .washBox .washBoxItems .washBoxItemsList li {
   width: 280px;
   height: 290px;
   background: white;
   margin-bottom: 10px;
 }
-/* line 63, ../../src/sass/_washBox.scss */
+/* line 63, ../sass/_washBox.scss */
 .washBox .washBoxItems .washBoxItemsList img {
   width: 220px;
 }
-/* line 68, ../../src/sass/_washBox.scss */
+/* line 68, ../sass/_washBox.scss */
 .washBox .washBoxItems .washBoxItemsList li:hover {
   box-shadow: 0 0 10px 3px #ccc;
   transform: translateY(-10px);
@@ -649,78 +649,78 @@ main .pics img {
 }
 
 /*************厨房用品部分样式****************/
-/* line 1, ../../src/sass/_kichen.scss */
+/* line 1, ../sass/_kichen.scss */
 .kichen {
   width: 100%;
   margin-bottom: 40px;
   /**********洗衣机区域标题栏*******************/
   /**********洗衣机主内容样式************/
 }
-/* line 5, ../../src/sass/_kichen.scss */
+/* line 5, ../sass/_kichen.scss */
 .kichen .kichenTittle {
   width: 100%;
   height: 30px;
   border-left: 3px solid #f00;
   margin-bottom: 20px;
 }
-/* line 12, ../../src/sass/_kichen.scss */
+/* line 12, ../sass/_kichen.scss */
 .kichen .kichenTittle .kichenTittleLeft {
   width: 300px;
   margin-left: 20px;
 }
-/* line 17, ../../src/sass/_kichen.scss */
+/* line 17, ../sass/_kichen.scss */
 .kichen .kichenTittle .AI {
   width: 200px;
 }
-/* line 21, ../../src/sass/_kichen.scss */
+/* line 21, ../sass/_kichen.scss */
 .kichen .kichenTittle a:hover {
   color: #f00;
 }
-/* line 24, ../../src/sass/_kichen.scss */
+/* line 24, ../sass/_kichen.scss */
 .kichen .kichenTittle h2 {
   font-size: 20px;
 }
-/* line 27, ../../src/sass/_kichen.scss */
+/* line 27, ../sass/_kichen.scss */
 .kichen .kichenTittle p {
   color: #f00;
 }
-/* line 33, ../../src/sass/_kichen.scss */
+/* line 33, ../sass/_kichen.scss */
 .kichen .kichenItems {
   width: 100%;
 }
-/* line 36, ../../src/sass/_kichen.scss */
+/* line 36, ../sass/_kichen.scss */
 .kichen .kichenItems .kichenItemsLeft {
   width: 300px;
   height: 600px;
 }
-/* line 39, ../../src/sass/_kichen.scss */
+/* line 39, ../sass/_kichen.scss */
 .kichen .kichenItems .kichenItemsLeft img {
   width: 300px;
   height: 600px;
 }
-/* line 44, ../../src/sass/_kichen.scss */
+/* line 44, ../sass/_kichen.scss */
 .kichen .kichenItems .kichenItemsList {
   width: 890px;
   margin-left: 20px;
 }
-/* line 47, ../../src/sass/_kichen.scss */
+/* line 47, ../sass/_kichen.scss */
 .kichen .kichenItems .kichenItemsList ul {
   width: 100%;
   height: 100%;
   flex-wrap: wrap;
 }
-/* line 54, ../../src/sass/_kichen.scss */
+/* line 54, ../sass/_kichen.scss */
 .kichen .kichenItems .kichenItemsList li {
   width: 280px;
   height: 290px;
   background: white;
   margin-bottom: 10px;
 }
-/* line 62, ../../src/sass/_kichen.scss */
+/* line 62, ../sass/_kichen.scss */
 .kichen .kichenItems .kichenItemsList img {
   width: 220px;
 }
-/* line 67, ../../src/sass/_kichen.scss */
+/* line 67, ../sass/_kichen.scss */
 .kichen .kichenItems .kichenItemsList li:hover {
   box-shadow: 0 0 10px 3px #ccc;
   transform: translateY(-10px);
@@ -728,78 +728,78 @@ main .pics img {
 }
 
 /*************智能家电部分样式****************/
-/* line 1, ../../src/sass/_appcessory.scss */
+/* line 1, ../sass/_appcessory.scss */
 .appcessory {
   width: 100%;
   margin-bottom: 40px;
   /**********电视区域标题栏*******************/
   /**********电视主内容样式************/
 }
-/* line 5, ../../src/sass/_appcessory.scss */
+/* line 5, ../sass/_appcessory.scss */
 .appcessory .appcessoryTittle {
   width: 100%;
   height: 30px;
   border-left: 3px solid #f00;
   margin-bottom: 20px;
 }
-/* line 12, ../../src/sass/_appcessory.scss */
+/* line 12, ../sass/_appcessory.scss */
 .appcessory .appcessoryTittle .appcessoryTittleLeft {
   width: 300px;
   margin-left: 20px;
 }
-/* line 17, ../../src/sass/_appcessory.scss */
+/* line 17, ../sass/_appcessory.scss */
 .appcessory .appcessoryTittle .AI {
   width: 200px;
 }
-/* line 21, ../../src/sass/_appcessory.scss */
+/* line 21, ../sass/_appcessory.scss */
 .appcessory .appcessoryTittle a:hover {
   color: #f00;
 }
-/* line 24, ../../src/sass/_appcessory.scss */
+/* line 24, ../sass/_appcessory.scss */
 .appcessory .appcessoryTittle h2 {
   font-size: 20px;
 }
-/* line 27, ../../src/sass/_appcessory.scss */
+/* line 27, ../sass/_appcessory.scss */
 .appcessory .appcessoryTittle p {
   color: #f00;
 }
-/* line 33, ../../src/sass/_appcessory.scss */
+/* line 33, ../sass/_appcessory.scss */
 .appcessory .appcessoryItems {
   width: 100%;
 }
-/* line 36, ../../src/sass/_appcessory.scss */
+/* line 36, ../sass/_appcessory.scss */
 .appcessory .appcessoryItems .appcessoryItemsLeft {
   width: 300px;
   height: 600px;
 }
-/* line 39, ../../src/sass/_appcessory.scss */
+/* line 39, ../sass/_appcessory.scss */
 .appcessory .appcessoryItems .appcessoryItemsLeft img {
   width: 300px;
   height: 600px;
 }
-/* line 44, ../../src/sass/_appcessory.scss */
+/* line 44, ../sass/_appcessory.scss */
 .appcessory .appcessoryItems .appcessoryItemsList {
   width: 890px;
   margin-left: 20px;
 }
-/* line 47, ../../src/sass/_appcessory.scss */
+/* line 47, ../sass/_appcessory.scss */
 .appcessory .appcessoryItems .appcessoryItemsList ul {
   width: 100%;
   height: 100%;
   flex-wrap: wrap;
 }
-/* line 54, ../../src/sass/_appcessory.scss */
+/* line 54, ../sass/_appcessory.scss */
 .appcessory .appcessoryItems .appcessoryItemsList li {
   width: 280px;
   height: 290px;
   background: white;
   margin-bottom: 10px;
 }
-/* line 62, ../../src/sass/_appcessory.scss */
+/* line 62, ../sass/_appcessory.scss */
 .appcessory .appcessoryItems .appcessoryItemsList img {
   width: 220px;
 }
-/* line 67, ../../src/sass/_appcessory.scss */
+/* line 67, ../sass/_appcessory.scss */
 .appcessory .appcessoryItems .appcessoryItemsList li:hover {
   box-shadow: 0 0 10px 3px #ccc;
   transform: translateY(-10px);
@@ -807,33 +807,33 @@ main .pics img {
 }
 
 /*****************************主体部分下面新闻资讯样式***************************/
-/* line 2, ../../src/sass/_news.scss */
+/* line 2, ../sass/_news.scss */
 #news {
   width: 1190px;
   margin-bottom: 40px;
 }
-/* line 6, ../../src/sass/_news.scss */
+/* line 6, ../sass/_news.scss */
 #news ul {
   width: 100%;
   height: 500px;
 }
-/* line 12, ../../src/sass/_news.scss */
+/* line 12, ../sass/_news.scss */
 #news ul li {
   align-items: flex-start;
   width: 280px;
   height: 400px;
   background: #f2f2f2;
 }
-/* line 18, ../../src/sass/_news.scss */
+/* line 18, ../sass/_news.scss */
 #news ul li div {
   width: 100%;
   margin: 10px 0;
 }
-/* line 25, ../../src/sass/_news.scss */
+/* line 25, ../sass/_news.scss */
 #news ul img {
   width: 280px;
 }
-/* line 30, ../../src/sass/_news.scss */
+/* line 30, ../sass/_news.scss */
 #news ul span {
   display: block;
   width: 60px;
@@ -843,13 +843,13 @@ main .pics img {
   text-align: center;
   line-height: 20px;
 }
-/* line 39, ../../src/sass/_news.scss */
+/* line 39, ../sass/_news.scss */
 #news ul p {
   font-size: 14px;
   color: gray;
   line-height: 20px;
 }
-/* line 44, ../../src/sass/_news.scss */
+/* line 44, ../sass/_news.scss */
 #news ul a {
   text-decoration: none;
   font-size: 14px;
@@ -859,7 +859,7 @@ main .pics img {
 
 /*****************************页尾部分样式***************************/
 /**********************页尾样式****************************/
-/* line 3, ../../src/sass/_footer.scss */
+/* line 3, ../sass/_footer.scss */
 footer {
   width: 100%;
   background: #f0f0f0;
@@ -868,71 +868,71 @@ footer {
   justify-content: flex-start;
   align-items: center;
 }
-/* line 11, ../../src/sass/_footer.scss */
+/* line 11, ../sass/_footer.scss */
 footer .footerTop {
   width: 1190px;
   height: 125px;
   border-bottom: 2px solid #e7e7e7;
 }
-/* line 16, ../../src/sass/_footer.scss */
+/* line 16, ../sass/_footer.scss */
 footer .footerTop a {
   color: gray;
 }
-/* line 20, ../../src/sass/_footer.scss */
+/* line 20, ../sass/_footer.scss */
 footer .footerMid {
   width: 1190px;
   height: 230px;
   padding: 20px 0;
 }
-/* line 25, ../../src/sass/_footer.scss */
+/* line 25, ../sass/_footer.scss */
 footer .footerMid ul {
   height: 200px;
 }
-/* line 29, ../../src/sass/_footer.scss */
+/* line 29, ../sass/_footer.scss */
 footer .footerMid ul li {
   margin-top: 16px;
   font-size: 14px;
 }
-/* line 34, ../../src/sass/_footer.scss */
+/* line 34, ../sass/_footer.scss */
 footer .footerMid ul a {
   color: gray;
 }
-/* line 37, ../../src/sass/_footer.scss */
+/* line 37, ../sass/_footer.scss */
 footer .footerMid ul li:hover a {
   color: red;
   text-decoration: underline;
 }
-/* line 44, ../../src/sass/_footer.scss */
+/* line 44, ../sass/_footer.scss */
 footer .footerBott {
   width: 1190px;
   padding-top: 20px;
   align-items: flex-start;
 }
-/* line 50, ../../src/sass/_footer.scss */
+/* line 50, ../sass/_footer.scss */
 footer .footerBott a {
   font-size: 12px;
   color: gray;
 }
-/* line 57, ../../src/sass/_footer.scss */
+/* line 57, ../sass/_footer.scss */
 footer .footerBott ul a {
   font-size: 14px;
 }
-/* line 63, ../../src/sass/_footer.scss */
+/* line 63, ../sass/_footer.scss */
 footer .footerBott .footBottom {
   width: 100%;
   margin: 20px 0;
   color: gray;
   font-size: 12px;
 }
-/* line 67, ../../src/sass/_footer.scss */
+/* line 67, ../sass/_footer.scss */
 footer .footerBott .footBottom a {
   font-size: 12px;
 }
-/* line 73, ../../src/sass/_footer.scss */
+/* line 73, ../sass/_footer.scss */
 footer .footerBott a:hover {
   text-decoration: underline;
 }
-/* line 76, ../../src/sass/_footer.scss */
+/* line 76, ../sass/_footer.scss */
 footer .footerBott .last {
   position: relative;
   left: 428px;
