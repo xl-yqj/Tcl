@@ -33,7 +33,7 @@ class Cartlist {
                     $cloneBox.find('.quantity-from input').val(num);
                     $cloneBox.find('.b-sum strong').html((value.price * num).toFixed(2));
                     $cloneBox.show();
-                    
+
                     this.itemlist.append($cloneBox);
 
                 }
@@ -117,26 +117,26 @@ class Cartlist {
         function singleprice(obj) {
             let $dj = parseInt(obj.parents('.goods-info').find('.b-price strong').html());
             let $count = parseFloat(obj.parents('.goods-info').find('.quantity-form input').val());
-            return $dj*$count.toFixed(2);
+            return $dj * $count.toFixed(2);
         }
 
         //数量改变 重新本地存储 通过sid获取数量的位置，将当前的值存放到对应的位置
-        function local(sid,value){
-            if(localStorage.getItem('cartsid') && localStorage.getItem('cartnum') ){
+        function local(sid, value) {
+            if (localStorage.getItem('cartsid') && localStorage.getItem('cartnum')) {
                 let arrsid = localStorage.getItem('cartsid').split(',');
                 let arrnum = localStorage.getItem('cartnum').split(',');
-                let index = $.inArray(sid,arrsid);
+                let index = $.inArray(sid, arrsid);
                 arrnum[index] = value;
-                localStorage.setItem('cartnum',arrnum.toString());
+                localStorage.setItem('cartnum', arrnum.toString());
             }
         }
         //删除
         delgoods(){
-            let arrnum=[];
-            let arrsid =  [];
+            let arrnum = [];
+            let arrsid = [];
             let _this = this;
 
-            function getstorage(){
+            function getstorage() {
                 if (localStorage.getItem('cartsid') && localStorage.getItem('cartnum')) {
                     arrsid = localStorage.getItem('cartsid').split(',');
                     arrnum = localStorage.getItem('cartnum').split(',');
@@ -144,42 +144,42 @@ class Cartlist {
             }
 
             //删除本地存储数组项的值
-            function delstorage(sid,arrsid){
+            function delstorage(sid, arrsid) {
                 let $index = -1;
-                $.each (arrsid,function(index,value){
-                    if(sid === value){
+                $.each(arrsid, function (index, value) {
+                    if (sid === value) {
                         $index = index;
                     }
                 });
-                arrsid.splice($index,1);
-                aarrnum.splice($index,1);
-                localStorage.setItem('cartsid',arrsid.toString());
-                localStorage.setItem('cartnum',arrnum.toString());
+                arrsid.splice($index, 1);
+                aarrnum.splice($index, 1);
+                localStorage.setItem('cartsid', arrsid.toString());
+                localStorage.setItem('cartnum', arrnum.toString());
 
             }
             //单条删除
-            $('.item-list').on('click','b-action a',function(){
+            $('.item-list').on('click', 'b-action a', function () {
                 getstorage();//取出本地存储
-                if(window.confirm('你确定要删除吗？')){
+                if (window.confirm('你确定要删除吗？')) {
                     $(this).parents('.goods-item').remove();
 
                 }
-                delstorage($(this).parents('.goods-item').find('.goods-pic img').attr('sid'),arrsid);
+                delstorage($(this).parents('.goods-item').find('.goods-pic img').attr('sid'), arrsid);
                 _this.allprice();
             });
 
             //删除选中
-            $('.operation a').on('click',function(){
+            $('.operation a').on('click', function () {
                 getstorage();
-                if(window.confirm('你确定要删除吗？')){
-                    $('.goods-item:visible').each(function(index,element){
-                        if($(this).find('input:checkbox').is(':checked')){
+                if (window.confirm('你确定要删除吗？')) {
+                    $('.goods-item:visible').each(function (index, element) {
+                        if ($(this).find('input:checkbox').is(':checked')) {
                             $(this).remove();
-                           
+
                         }
-                        delstorage($(this).find('.goods-pic img').attr('sid'),attsid);
+                        delstorage($(this).find('.goods-pic img').attr('sid'), attsid);
                     });
-                 
+
 
                 }
                 _this.allprice();

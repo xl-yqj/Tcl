@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1510501_ss027nhxre8.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1510501_ss027nhxre8.css">
     <style>
         * {
             margin: 0;
@@ -19,6 +19,10 @@
 
         a {
             text-decoration: none;
+            color:gray;
+            font-size: 12px;
+           
+            
 
         }
 
@@ -85,11 +89,26 @@
        
         }
         .boxInner div input{
-            width: 200px;
-            margin-right: 20px;
+            width: 160px;
+            /* margin-right: 20px; */
             border: 0;
             outline: none;
         }
+        .tel input {
+            margin-right: 80px;
+        }
+        .yanZhengMa,.message{
+            width:80px;
+            height: 100%;
+            border-left:1px solid gray;
+            text-align: center;
+            line-height: 40px;
+        }
+        .message{
+            background: #ccc;
+        }
+      
+
        /*  隐藏的span*/
 
        .boxInner > span{
@@ -149,12 +168,14 @@
                 <div class='pic_yanzheng'>
                     <span class='icon-tupianyanzhengma'></span>
                     <input type="text" placeholder="图片验证码">
+                    <span class='yanZhengMa'><a href=""></a></span>
 
                 </div>
                 <span></span>
                 <div class='mess_yanzheng'>
                     <span class='icon-shouji1'></span>
                     <input type="text" placeholder="手机验证码">
+                    <span class='message'><a href="">获取验证码</a></span>
                 </div>
                 <span></span>
                 <input type="submit" value='注册' class='submit'>
