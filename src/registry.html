@@ -104,6 +104,9 @@
             text-align: center;
             line-height: 40px;
         }
+        .yanZhengMa{
+            background: url(https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2016852068,2432474498&fm=26&gp=0.jpg) no-repeat;
+        }
         .message{
             background: #ccc;
         }
@@ -164,20 +167,20 @@
                     <input type="text" placeholder="手机号码">
 
                 </div>
-                <span></span>
+                <span class='tel-wrong'></span>
                 <div class='pic_yanzheng'>
                     <span class='icon-tupianyanzhengma'></span>
                     <input type="text" placeholder="图片验证码">
                     <span class='yanZhengMa'><a href=""></a></span>
 
                 </div>
-                <span></span>
+                <span class='pic-wrong'></span>
                 <div class='mess_yanzheng'>
                     <span class='icon-shouji1'></span>
-                    <input type="text" placeholder="手机验证码">
+                    <input type="text" placeholder="短信验证码">
                     <span class='message'><a href="">获取验证码</a></span>
                 </div>
-                <span></span>
+                <span class='mess-wrong'></span>
                 <input type="submit" value='注册' class='submit'>
                 <p>
                     <a href="">已有账号直接登录</a>
@@ -201,6 +204,7 @@
             ©2010-2016 TCL CORPORATION All Rights Reserved. 使用条款 TCL集团股份有限公司版权所有 粤ICP备05040863号
         </p>
     </footer>
+    <script src="../dist/bundle.js"></script>
 </body>
 
 </html>
