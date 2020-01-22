@@ -6,22 +6,24 @@ class Registry {
         this.telwrong = $('.tel-wrong');
         this.picwrong = $('.pic-wrong');
         this.messwrong = $('.mess-wrong');
-
+        let $telLock = true;
+        let $yzmLock = true;
     }
     init() {
 
         this.Tel();
         this.yzm();
+        this.yanzheng();
+        this.submit();
     }
     //手机号码输入框
     Tel() {
         let $tinput = this.tel.find('input');
-        let $telLock = true;
         $tinput.on('blur', () => {
+
             if ($tinput.val() !== '') {
                 let reg = /^1[3578]\d{9}$/;
                 if (reg.test($tinput.val())) {
-                    console.log('??')
                     this.telwrong.html('√');
                     this.telwrong.css('color', 'green');
                     $telLock = true;
@@ -36,6 +38,24 @@ class Registry {
                 this.telwrong.css('color', 'red');
                 $telLock = false;
             }
+            //前后端交互
+            $.ajax({
+                type: 'post',
+                url: 'http://localhost/Tcl/php/registry.php',
+                data: {
+                    userTel: $tinput.val()
+                }
+            }).done((result) => {
+                if (!result) {
+                    this.telwrong.html('√');
+                    this.telwrong.css('color', 'green');
+                    $telLock = true;
+                } else {
+                    this.telwrong.html('该手机号已注册');
+                    this.telwrong.css('color', 'red');
+                    $telLock = false;
+                }
+            });
         });
     }
     //生成随机验证码
@@ -52,20 +72,34 @@ class Registry {
     //匹配验证码
     yanzheng() {
         let $pinput = this.pic.find('input');
-        if ($pinput.val() !== '') {
-            if ($pinput.val() === $('.yanZhengMa').html($strhtml)) {
-                this.picwrong.html('√');
-                this.picwrong.css('color', 'green');
-
+        $pinput.on('blur', () => {
+            // alert(this.picwrong.html('????'));
+            if ($pinput.val() !== '') {
+                if ($pinput.val() === $('.yanZhengMa').html($strhtml)) {
+                    this.picwrong.html('√');
+                    this.picwrong.css('color', 'green');
+                    $yzmLock = true;
+                } else {
+                    this.yzm();
+                    this.picwrong.html('请输入正确的验证码');
+                    this.picwrong.css('color', 'red');
+                    $yzmLock = false;
+                }
             } else {
-                this.yzm();
                 this.picwrong.html('请输入正确的验证码');
                 this.picwrong.css('color', 'red');
+                $yzmLock = false;
             }
-        } else {
-            this.picwrong.html('请输入正确的验证码');
-            this.picwrong.css('color', 'red');
-        }
+        });
+
+    }
+    //提交
+    submit() {
+        $('form').on('submit', () => {
+            if (!$telLock || !$yzmLock) {
+                return false;
+            }
+        });
     }
 
 }
