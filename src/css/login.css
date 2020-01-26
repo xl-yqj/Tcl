@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background: lightcoral;
+    overflow: hidden;
+}
+
+header .top {
+
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0 0 60px;
+}
+
+header span {
+    display: block;
+    font-size: 36px;
+    color: #888;
+}
+
+/* **********中间大框******************* */
+#item {
+    width: 100%;
+    height: 480px;
+    background: url(http://s0.mall.tcl.com/group1/M00/00/10/Ckgbll4LHlGABLMmAAkvMCnKVWY796.jpg) no-repeat;
+    position: relative;
+}
+.registryBox{
+    width: 340px;
+    height: 340px;
+    border: 1px solid  gray;
+    position: absolute;
+    right: 110px;
+    top: 60px;
+    border-radius: 5px;
+    display: flex;
+    background: white;
+  
+}
+.boxInner{
+    width: 260px;
+    height: 300px;
+
+    margin: auto;
+   
+}
+.boxInner p{
+   
+    margin: 10px 0;
+}
+
+.boxInner div{
+    width: 260px;
+    height: 40px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content:space-between;
+    align-items: center; 
+
+}
+.boxInner div input{
+    width: 200px;
+    margin-right: 20px;
+    border: 0;
+    outline: none;
+}
+/*  隐藏的span*/
+
+.boxInner > span{
+  
+   display: block;
+   width: 260px;
+   height: 20px;
+   
+}
+.submit{
+width: 260px;
+height: 40px;
+background: red;
+}
+
+/* *********页尾**************** */
+footer {
+    width: 100%;
+    height: 160px;
+    background: lightpink;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 40px;
+}
+
+footer ul {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}

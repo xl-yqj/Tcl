@@ -1,7 +1,7 @@
 
 // http://xlxlyqj.xlismine.top:8888/tcl/category/2
 class IndexRender {
-    constructor() {
+    constructor(index) {
         this.tvItemsList = $('.tvItemsList');
     }
     init() {

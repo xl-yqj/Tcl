@@ -1,8 +1,12 @@
 
 class DetailsRender {
     constructor() {
+        console.log("yyyyyqj111");
+
         //接收id
         this.sid = location.search.substring(1).split('=')[1];//依接口地址而来
+        console.log("yyyyyqj:::" + this.sid);
+
 
         this.wrap = $('.wrap');
         this.spic = $('#spic');
@@ -19,13 +23,15 @@ class DetailsRender {
 
     }
     init() {
+        console.log("yyyyyqj");
         $.ajax({
-            url: "http://xlxlyqj.xlismine.top:8888/tcl/category/2",// 该地址不行，要与后端交互，请求数据然后后端返回
+            url: "http://xlxlyqj.xlismine.top:8888/tcl/get/"+this.sid,// 该地址不行，要与后端交互，请求数据然后后端返回
             data: {
                 sid: this.sid
             },
             dataType: 'json'
         }).done((objdata) => {
+            console.log("yyyyyqj" + objdata)
             $('#spic img').attr('src', objdata.pic_url);
             $('.loadtitle').html(objdata.pname);
             $('.loadpcp').html(objdata.price);

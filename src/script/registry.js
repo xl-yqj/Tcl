@@ -6,8 +6,8 @@ class Registry {
         this.telwrong = $('.tel-wrong');
         this.picwrong = $('.pic-wrong');
         this.messwrong = $('.mess-wrong');
-        let $telLock = true;
-        let $yzmLock = true;
+       
+       
     }
     init() {
 
@@ -19,6 +19,7 @@ class Registry {
     //手机号码输入框
     Tel() {
         let $tinput = this.tel.find('input');
+        let $telLock = true;
         $tinput.on('blur', () => {
 
             if ($tinput.val() !== '') {
@@ -60,11 +61,11 @@ class Registry {
     }
     //生成随机验证码
     yzm() {
-
+        
         let $strhtml = '';
         let $arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
         for (let i = 0; i < 4; i++) {
-            let $index = Math.ceil(Math.random() * 8);
+           let $index = Math.ceil(Math.random() * 8);
             $strhtml += $arr[$index];
         }
         $('.yanZhengMa').html($strhtml);
@@ -72,6 +73,7 @@ class Registry {
     //匹配验证码
     yanzheng() {
         let $pinput = this.pic.find('input');
+        let $yzmLock = true;
         $pinput.on('blur', () => {
             // alert(this.picwrong.html('????'));
             if ($pinput.val() !== '') {
